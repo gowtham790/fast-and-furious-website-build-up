@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Register</title>
+    <style>
+        *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../IMAGES1/home11.webp);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+.wrapper{
+    width: 420px;
+    background: transparent;
+    border: 2px solid white;
+    backdrop-filter:blur(0px) ;
+    border-radius: 25px;
+    color: rgb(89, 245, 58);
+    box-shadow:0 0 20px white;
+    padding: 30px 40px;
+
+}
+.wrapper h1{
+    text-align: center;
+    color:white;
+    font-weight: 900;
+    
+}
+.one{
+    width: 100px;
+    height: 50px;
+    margin:30px 0 ;
+}.one input{
+    width: 370%;
+    height: 50px;
+    color:white;
+    font-weight:900;
+    font-size: smaller;
+    background: transparent;
+    border:none;
+    outline: none;
+    border: 3px solid rgb(255, 0, 0);
+    border-radius: 30px;
+    padding:15px;
+}
+.one i{
+    position: absolute;
+    right:21px;  
+}
+.wrapper .remember-forget{
+    display: flex;
+    justify-content:space-between;
+    font-size: medium;
+    font-weight:bolder;
+}
+input::placeholder{
+    color: white;
+    font-weight: bolder;
+}
+.hii{
+    position: relative;
+    top: 19px;
+    width:100%;
+    height:40px;
+    border-radius: 30px;
+    cursor: pointer;
+    color: rgb(255, 0, 170);
+    font-size: medium;
+    font-weight: bolder;
+    border: 4px solid;
+}
+
+    </style>
+    
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+        <form action="../PROJECT 2/taskone.html">
+        <h1>SIGN UP</h1>
+        <div class="one">
+            <input type="text" placeholder="Username" required>
+            <i class="bx bxs-user"></i><br>
+        </div>    
+        <div class="one">
+            <input type="mail" placeholder="E-Mail" required>
+            <i class='bx bxl-gmail'></i><br>
+        </div>   
+        <div class="one">
+            <input type="password" placeholder="Password" required>
+            <i class="bx bxs-lock alt"></i><br>
+        </div>
+        <div class="remember-forget">
+            <input type="checkbox" required>
+            <label for="remember">I  Agree Terms & Conditions</label><br>
+        </div>
+        <div>
+        <button type="submit" class="hii">SIGN UP</button>
+        </div>
+        </form>
+        </div>
+    </main>
+    
+</body>
+</html>

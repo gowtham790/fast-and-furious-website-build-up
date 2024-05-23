@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <style>
+        *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}  
+body{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-image: url(../IMAGES1/need-for-speed-pay-back-wallpaper-1152x768_36.jpg);
+    background-size: cover;
+    min-height:110vh;
+    background-position: center;
+} 
+.wrapper{
+    width:420px;
+    background: transparent;
+    border: 2px solid rgb(235, 7, 7);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: rgb(30, 245, 2);
+    box-shadow:  0 0 40px rgb(240, 1, 1);
+    padding: 30px 40px;
+}
+.wrapper h1{
+    text-align: center;
+    color: rgb(221, 9, 122);
+}
+.one{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+
+}
+.one i{
+    /* doubt */
+    position: absolute;
+    left:79%;
+    
+
+}
+.one input{
+    width: 100%;
+    height: 50px;
+    color: azure;
+    background: transparent;
+    outline: none;
+    border: 3px solid rgb(255, 252, 252);
+    border-radius: 50px;
+    padding: 12px;
+}
+.wrapper .remember-forget{
+    display: flex;
+    justify-content: space-between;
+    font-size: medium;
+    font-weight:900;
+    margin: -15px 0 15px;
+}
+
+input::placeholder{
+    color: rgb(245, 245, 245);
+    font-weight:800;
+    
+
+}
+.remember-forget a{
+    color: azure;
+    text-decoration: none;
+    font-weight: 900;
+}
+.remember-forget a:hover{
+    text-decoration: underline;
+    color: gold;
+}
+.hii{
+    width: 100%;
+    height: 40px;
+    border:4px solid;
+    border-radius: 40px;
+    cursor: pointer;
+    color:rgb(194, 15, 248);
+    font-size: medium;
+    font-weight: bolder;
+}
+.register-link{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 900;
+    
+}
+.register-link a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight:900;
+}
+.register-link a:hover{
+    text-decoration: underline;
+    color: gold;
+} 
+     </style>
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+        <form action="../PROJECT 2/home.html">
+        <h1>SIGN IN</h1>
+        <div class="one">
+            <input type="text" placeholder="username" required>
+            <i class="bx bxs-user"></i>
+            <br>
+        </div>    
+        <div class="one">
+            <input type="password" placeholder="password" required>
+            <i class="bx bxs-lock alt"></i><br>
+            <br>
+        </div>
+        <div class="remember-forget">
+            <input type="checkbox" required>
+            <label for="remember">Remember me</label>
+            <a href="https://www.bmw.in">Forget password.?</a>
+        </div>
+        <div>
+        <button type="submit" class="hii">SIGN IN</button>
+        </div>
+        <div class="register-link">
+            <P>Don't Have An Account? <a href="./Register.html">Register</a>
+        </div>
+      </form>
+      </div>
+    </main>
+    
+</body>
+</html>
